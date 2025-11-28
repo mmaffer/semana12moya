@@ -3,9 +3,6 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
 
-
-
-    // Add the Google services Gradle plugin
     id("com.google.gms.google-services")
 }
 
@@ -19,8 +16,6 @@ android {
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -32,6 +27,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -63,15 +59,15 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 
-    // Firebase BOM (CORREGIDO)
+    // Firebase BOM
     implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
 
-    // Firebase Auth (solo UNA vez)
+    // Firebase Auth
     implementation("com.google.firebase:firebase-auth-ktx")
 
+    // 🔥 FIRESTORE CORRECTO
+    implementation("com.google.firebase:firebase-firestore-ktx")
+
+    // Navigation
     implementation("androidx.navigation:navigation-compose:2.8.0")
-
-
-
-
 }
