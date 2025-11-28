@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "339171785678",
+    "project_id": "semana12moya",
+    "storage_bucket": "semana12moya.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339171785678:android:9a52eac598d12010f4899f",
+        "android_client_info": {
+          "package_name": "edu.pe.semana12moya"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFSXvuTCx0TRR-k9pY9AJnfeXB3l9LhUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
